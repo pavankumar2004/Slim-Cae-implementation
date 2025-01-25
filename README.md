@@ -1,17 +1,25 @@
-# Slimmable Compressive Autoencoders (SlimCAEs)
+# Compression Autoencoder
 
-**Slimmable Compressive Autoencoders (SlimCAEs)** is a neural image compression model that dynamically adjusts the network width to achieve variable compression rates. The model utilizes slimmable Generalized Divisive Normalization (GDN) layers and a λ-scheduling training algorithm to optimize memory usage, computation, and latency while maintaining high compression performance.
+This project implements a **Compression Autoencoder** using PyTorch to compress and reconstruct images. The autoencoder reduces image size using a convolutional encoder-decoder architecture while maintaining reconstruction quality. 
 
 ## Features
+- **Image Compression**: Encodes images into a compact latent representation.
+- **Quantization**: Simulates compression during training with optional noise addition.
+- **GPU Support**: Leverages CUDA for efficient training and inference.
+- **Customizable Architecture**: Adjustable latent dimensions and image sizes for resource-limited environments.
+- **Training and Testing Pipelines**: Includes easy-to-use functions for model training, testing, and evaluation.
 
-- **Dynamic Network Width**: Adjusts the network's width to achieve different compression rates.
-- **Slimmable GDN Layers**: Uses slimmable GDN layers for flexible image compression.
-- **λ-Scheduling Algorithm**: Optimizes the model's training for better performance with varying compression levels.
-- **Optimized Memory & Computation**: Reduces computational costs and memory usage while preserving compression quality.
+---
 
-## Prerequisites
+## Requirements
 
-- Python 3.x
-- PyTorch (depending on your implementation)
-- CUDA-enabled GPU for training (optional but recommended)
+### Dependencies
+- Python 3.8+
+- PyTorch 1.10+
+- torchvision
+- Pillow
+- matplotlib
 
+Install the dependencies using:
+```bash
+pip install torch torchvision pillow matplotlib

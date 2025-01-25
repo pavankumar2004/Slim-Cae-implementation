@@ -12,6 +12,6 @@
 ## Prerequisites
 
 - Python 3.x
-- TensorFlow or PyTorch (depending on your implementation)
+- PyTorch (depending on your implementation)
 - CUDA-enabled GPU for training (optional but recommended)
 
